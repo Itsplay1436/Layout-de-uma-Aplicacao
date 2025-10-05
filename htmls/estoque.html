@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Supermercado 1436 - Estoque</title>
+    <link rel="stylesheet" href="/styles/estoque.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="/htmls/index.html">Início</a></li>
+            <li><a href="/htmls/cadastro.html">Cadastro</a></li>
+            <li><a href="/htmls/estoque.html">Estoque</a></li>
+            <li><a href="/htmls/vendas.html">Vendas</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Controle de Estoque</h1>
+    </header>
+
+    <main>
+        <div class="filters">
+            <label for="filtro">Filtrar por Categoria:</label>
+            <select id="filtro" name="filtro">
+                <option value="">Todas</option>
+                <option value="mercearia">Mercearia</option>
+                <option value="horti-fruit">Horti-Fruit</option>
+                <option value="bebidas">Bebidas</option>
+                <option value="congelados">Congelados</option>
+                <option value="laticinios">Laticínios</option>
+                <option value="limpeza">Limpeza</option>
+                <option value="higiene">Higiene</option>
+                <option value="vestuario">Vestuário</option>
+                <option value="bazar">Bazar</option>
+                <option value="decoracao">Decoração</option>
+                <option value="padaria">Padaria</option>
+                <option value="acougue">Açougue</option>
+                <option value="pet-shop">Pet Shop</option>
+            </select>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Exemplo Produto</td>
+                    <td>5</td>
+                    <td class="warning">Baixo estoque</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button type="button" class="primary">Atualizar Estoque</button>
+    </main>
+    <!--<script type="module" src="/scripts/main.js"></script>-->
+</body>
+</html>
